@@ -1,17 +1,18 @@
-ul.skills-list > li {
-    display: inline-block;
-    background-color: blue;
+body {
+    background-color: black;
     color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
 }
 
-.cards {
-    display:flex;
-    align-items: center;
-    justify-content: center;
+.container {
+    display: flex;
+    flex-direction: row;
 }
 
-.cards > .card {
-    margin:20px;
+.container > section {
+    flex-grow: 1;
+}
+
+* {
+    /* border-style: solid;
+    border-color: red; */
 }
