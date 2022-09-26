@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackiethon Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="navbar-menu" id="navMenu">
+            <div class="navbar-start">
+                <a href="#main" class="navbar-item">Main</a>
+                <a href="#about" class="navbar-item">About</a>
+                <a href="#skills" class="navbar-item">Skills</a>
+                <a href="#projects" class="navbar-item">Projects</a>
+                <a href="#contact" class="navbar-item">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <section id="main" class="hero is-primary">
+        <div class="hero-body">
+            <p class="title">
+                Professional Portfolio
+            </p>
+            <p class="subtitle">
+                Hao Duong
+            </p>
+        </div>
+    </section>
+    <section id="about" class="section">
+        <h2 class="title">
+            About
+        </h2>
+        <p class="subtitle">
+            Something about me
+        </p>
+    </section>
+    <section id="skills" class="section">
+        <h2 class="title">Skills</h2>
+        <ul class="skills-list">
+            <li>Skill 1</li>
+            <li>Skill 2</li>
+            <li>Skill 3</li>
+        </ul>
+    </section>
+    <section id="projects" class="section">
+        <h2 class="title">
+            Projects
+        </h2>
+        <div class="cards">
+            <div class="card">
+                <header class="card-header">
+                    <p class="card-header-title">
+                       Project 1
+                    </p>
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        Project 1 description ......
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <header class="card-header">
+                    <p class="card-header-title">
+                       Project 2
+                    </p>
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        Project 2 description .......
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <h2 class="title">
+            Contact
+        </h2>
+        <form>
+            <div class="field">
+                <label class="label">
+                    Name
+                </label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="e.g Alex Smith">
+                </div>
+              </div>
+              
+              <div class="field">
+                <label class="label">
+                    Email
+                </label>
+                <div class="control">
+                  <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
+                </div>
+              </div>
+        </form>
+    </section>
+</body>
+</html>

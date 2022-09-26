@@ -1,0 +1,17 @@
+ul.skills-list > li {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.cards {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards > .card {
+    margin:20px;
+}
