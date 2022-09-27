@@ -1,5 +1,48 @@
-h2.typing-txt{
+@charset "utf-8";
+
+/* Typing title */
+h2.typing-title{
     display: none;
+}
+
+.typing1 {
+    display: inline-block;
+    animation-name: cursor;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+}
+
+/* Typing content */
+.typing-text{
+    display: none;
+}
+
+ul {
+    list-style: none;
+    padding-left:0;
+}
+
+li {
+    padding-left:0;
+}
+
+.typing2 ul li.on {
+    display: inline-block;
+    animation-name: cursor;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cursor {
+    0%{border-right: 1px solid #000} 
+    50%{border-right: 1px solid #fff} 
+    100%{border-right: 1px solid #000} 
+}
+
+a{
+    text-decoration:none;
+    border:none;
+    color: inherit;
 }
 
 .typing {
@@ -8,13 +51,6 @@ h2.typing-txt{
     animation-duration: 0.3s;
     animation-iteration-count: infinite;
 }
-
-@keyframes cursor{
-    0%{ border-right: 1px solid #000; }
-    50%{ border-right: 1px solid #fff; }
-    100%{ border-right: 1px solid #000; }
-}
-
 
 .mytitle {
 

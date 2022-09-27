@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas 2020</title>
+
+    <link rel="shortcut icon" href="https://icons-for-free.com/iconfiles/png/512/christmas+gift+gift+box+present+icon-1320184382640199846.png">
+
+    <meta property="og:image" content="https://www.sampleposts.com/wp-content/uploads/2020/05/merry-christmas.jpg">
+    <meta property="og:title" content="Merry Happy Christmas!">
+    <meta property="og:description" content="Farewell 2020 from Taehoon Lee">
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Single Day', cursive;
+        }
+
+        body {
+            background-color: #70040d;
+        }
+
+        .envelope {
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+            background-size: cover;
+            background-position: center;
+            margin: 200px auto 0px auto;
+
+            cursor: pointer;
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align: center;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+        .rtan {
+            background-color: white;
+
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://i.pinimg.com/originals/6d/71/d1/6d71d11b06a197e14cefe44bb55f19c7.gif');
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0px auto;
+
+            border-radius: 100px;
+
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+
+        }
+
+        .hi {
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .messagebox {
+            background-color: ivory;
+
+            width: 400px;
+            margin: auto;
+
+            color: brown;
+
+            padding: 30px;
+
+            font-size: 20px;
+            line-height: 30px;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .messagebox {
+                width: 300px;
+                padding: 20px;
+            }
+            .rtan {
+                background-color: white;
+                width: 150px;
+                height: 150px;
+                margin: 70px auto 0px auto;
+            }
+            .hi {
+                font-size: 28px;
+            }   
+            .envelope {
+                margin: 150px auto 0px auto;
+                }
+        }
+
+
+    </style>
+
+    <script>
+
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+
+        function go_rtan() {
+            alert('Lucky, you found me!')
+            window.location.href='https://ibb.co/p0c59sj'
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">open it up!</h2>
+    </div>
+
+    <div class="letter-open">
+        <div class="rtan" onclick="go_rtan()"></div>
+        <h1 class="hi">Well done buddies!</h1>
+        <div class="messagebox">
+            Dear my friends. <br />
+            <br />
+            Are you doing well up there? <br />
+            It was a busy year. <br />
+            I'm just hoping you to be safe and stay healthy. <br />
+            I'm sure we will overcome it eventually. <br />
+            I wish you a merry blessed Christmas~ <br />
+            <p class="from">
+                Your sincerely, <br />
+                Taehoon Lee <br />
+                25 Dec 2020 <br />
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
