@@ -1,5 +1,14 @@
 @charset "utf-8";
 
+body {
+    font-family: 'Courier Prime';
+}
+
+.card > img {
+    object-fit: cover;
+    height: 18rem;
+}
+
 /* Typing title */
 h2.typing-title{
     display: none;

@@ -4,32 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hackiethon Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <title>
+        Hackiethon Portfolio
+    </title>
     <link rel="icon" href="./img/donut.png" type="image/x-icon">
-    <script src="script.js"></script>
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Courier+Prime">
+    <link rel="stylesheet" href="./css/style.css">
     <script
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.2.5/math.min.js"
     integrity="sha256-fWwwg2Pf3Ox5xhm9xCE7O+czkI2dSkqN6gUZumzGrx0="
     crossorigin="anonymous"></script>
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Courier+Prime">
-    <style>
-    body {
-        font-family: 'Courier Prime';
-    }
-    </style>
     <script src="https://kit.fontawesome.com/89ffba3581.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
-    <script src="typing_title.js"></script>
-    <script src="typing_text.js"></script>
+    <script defer src="./js/script.js"></script>
+    <script defer src="./js/typing_title.js"></script>
+    <script defer src="./js/typing_text.js"></script>
 </head>
 <body class="p-2">
-    <!-- Title -->
     <header>
         <div class = "text-center mytitle">
-            <h1> Hello world! </h1>
+            <h1>Hello world!</h1>
             <div> we are
                 <h2 class = "typing-title">John Lee & Hao Duong</h2>
                 <h2 class = "typing1"></h2>
@@ -43,7 +41,7 @@
                 <a class="nav-link text-black" href="#">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-black" href="#about">About</a>
+                <a class="nav-link text-black" href="#about">About Us</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-black" href="#projects">Projects</a>
@@ -55,7 +53,7 @@
         <div class="row hero">
             <div class="p-5 col-md-6">
                 <h2 id="about">
-                    About
+                    About Us
                 </h2>
                 <div class="typing-text">
                     <ul>
@@ -73,7 +71,7 @@
                         <li></li>
                     </ul>
                 </div>         
-                <div class="row">
+                <div class="row g-5 gy-5">
                     <div class="col-1">
                         <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
                     </div>
@@ -89,9 +87,6 @@
                 </div>
             </div>
             <div class="p-5 col-md-6">
-                <h2>
-                    Project Showcase
-                </h2>
                 <div class="d-flex justify-content-center">
                     <pre id="project-showcase" class="multiline">
                         This is the second section.
@@ -105,9 +100,10 @@
             Projects
         </h2>
         <div class="container">
-            <div class="row">
+            <div class="row gy-4">
                 <div class="col-sm">
                     <div class="card">
+                        <img src="./img/donut_preview.PNG" class="card-img-top img-thumbnail" alt="ASCII Donut Preview">
                         <div class="card-body">
                             <h5 class="card-title">The Donut</h5>
                             <p class="card-text">Mmmmmmm donuts.....</p>
@@ -120,6 +116,7 @@
                 </div>
                 <div class="col-sm">
                     <div class="card">
+                        <img src="./img/porfolio_preview.PNG" class="card-img-top img-thumbnail" alt="Hackiethon 2022 Portfolio Project Preview">
                         <div class="card-body">
                             <h5 class="card-title">Portfolio</h5>
                             <p class="card-text">The best portfolio... surely</p>
@@ -134,8 +131,9 @@
                 </div>
                 <div class="col-sm">
                     <div class="card">
+                        <img src="./img/xmas_preview.PNG" class="card-img-top img-thumbnail" alt="John's X-mas Project Preview">
                         <div class="card-body">
-                            <h5 class="card-title">Taehoon's Xmas</h5>
+                            <h5 class="card-title">John's X-mas</h5>
                             <p class="card-text">Christmas project</p>
                             <a href="./xmas_english.html" class="btn btn-primary">X-mas</a>
                         </div>
@@ -149,5 +147,18 @@
             </div>
         </div>
     </section>
+    <footer class="text-muted">
+        <div class="container p-5 text-center">
+            <p>
+                Hackiethon 2022 Portfolio Project by 
+                <a href="https://www.linkedin.com/in/hao-duong-a87058196/">Hao Duong</a> 
+                and 
+                <a href="">John Lee</a>
+            </p>
+            <p>
+                <a href="#">Back to top</a>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>

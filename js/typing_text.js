@@ -10,7 +10,7 @@ $(window).ready(function() {
 
     if(typing_bool == false){
         typing_bool = true;
-        var tyInt = setInterval(typing2, 100);
+        var tyInt = setInterval(typing2, 50);
     }
 
     function typing2(){
@@ -30,8 +30,8 @@ $(window).ready(function() {
                 clearInterval(tyInt);
             
                 setTimeout(function () {
-                    tyInt = setInterval(typing2, 100);
-                }, 1000);
+                    tyInt = setInterval(typing2, 50);
+                }, 750);
 
             } else if (li_index == li_length - 1) {
                 clearInterval(tyInt);
