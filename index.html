@@ -5,40 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackiethon Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.2.5/math.min.js"
+    integrity="sha256-fWwwg2Pf3Ox5xhm9xCE7O+czkI2dSkqN6gUZumzGrx0="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Courier+Prime">
+    <style>
+    body {
+        font-family: 'Courier Prime';
+    }
+    </style>
+    <script src="https://kit.fontawesome.com/89ffba3581.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1>John Lee/Hao Duong</h1>
+    <header class="text-center">
+        <h1 class="mt-4">Portfolio</h1>
     </header>
     <nav>
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Projects</a>
+    <div class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link text-black" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="#">Projects</a>
+            </li>
+        </ul>
+    </div>
     </nav>
     <div class="container">
-        <section>
-            <h2>
-                About
-            </h2>
-            <p>
-                This is the first section.
-            </p>
-        </section>
-        <section>
-            <h2>
-                Project Showcase
-            </h2>
-            <p>
-                This is the second section.
-            </p>
-        </section>
+        <div class="row hero">
+            <div class="p-3 col-md-6">
+                <h2>
+                    About
+                </h2>
+                <p class="lead typewriter" style="white-space: pre-line">
+                    > Software Engineer.
+                    > </p>
+                <div class="row">
+                    <div class="col-1">
+                        <i class="fa-brands fa-linkedin fa-xl"></i>
+                    </div>
+                    <div class="col-1">
+                        <i class="fa-brands fa-facebook fa-xl"></i>
+                    </div>
+                    <div class="col-1">
+                        <i class="fa-brands fa-twitter fa-xl"></i>
+                    </div>
+                    <div class="col-1">
+                        <i class="fa-brands fa-github fa-xl"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 col-md-6">
+                <h2>
+                    Project Showcase
+                </h2>
+                <pre id="project-showcase" class="multiline">
+                    This is the second section.
+                </pre>
+            </div>
+        </div>
     </div>
-    <section>
-        <h2>
+    <section class="mt-4">
+        <h2 class="mb-4 text-center">
             Projects
         </h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Project 1 Description</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">HTML</li>
+                            <li class="list-group-item">CSS</li>
+                            <li class="list-group-item">Javascript</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">First Link</a>
+                            <a href="#" class="card-link">Second Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">Project 2 Description</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">React</li>
+                            <li class="list-group-item">Javascript</li>
+                            <li class="list-group-item">MongoDB</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">First Link</a>
+                            <a href="#" class="card-link">Second Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">Project 3 Description</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Python</li>
+                            <li class="list-group-item">Flask</li>
+                            <li class="list-group-item">MongoDB</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">First Link</a>
+                            <a href="#" class="card-link">Second Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </html>

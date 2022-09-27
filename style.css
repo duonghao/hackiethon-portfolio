@@ -1,18 +1,21 @@
-body {
-    background-color: black;
+.multiline {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.hero {
     color: white;
+    background-color: black;
+    border-radius: 20px;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
+.typewriter::after {
+    content: '|';
+    animation: blinker 1s linear infinite;
 }
-
-.container > section {
-    flex-grow: 1;
-}
-
-* {
-    /* border-style: solid;
-    border-color: red; */
+  
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
 }

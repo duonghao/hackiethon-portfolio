@@ -1,14 +1,5 @@
-// import { create, all } from 'mathjs'
-// const math = create(all,  {})
-
-var projectShowcaseNode;
-var aboutNode;
-
-document.addEventListener("DOMContentLoaded", function() {
-    projectShowcaseNode = document.getElementById("project-showcase");
-    //aboutNode = document.getElementById("about");
-    render_frames();
-});
+import { create, all } from 'mathjs'
+const math = create(all,  {})
 
 // TODO: Adjust this based on the flexbox sizing
 let thetaSteps = 0.05;
@@ -26,6 +17,8 @@ let X = 2;
 let Y = 0;
 
 let K1 = screenWidth*K2*3/(8*(X+R)); // Scale factor of view from screen
+
+render_frames();
 
 function render_frame(rotationAngleX, rotationAngleZ) {
 
@@ -79,31 +72,25 @@ function render_frame(rotationAngleX, rotationAngleZ) {
     }
 }
 
-   
-
 async function render_frames() {
-    while(true) {
-        for(let rotationAngleXZ=0; rotationAngleXZ<2*math.pi; rotationAngleXZ += rotationAngleXZSteps) {
-            render_frame(rotationAngleXZ, rotationAngleXZ);
-            await sleep(100);
-            donutRenderOnDocument(print_frame());
-        }
+    for(let rotationAngleXZ=0; rotationAngleXZ<2*math.pi; rotationAngleXZ += rotationAngleXZSteps) {
+        render_frame(rotationAngleXZ, rotationAngleXZ);
+        await sleep(100);
+        print_frame();
     }
-}
-
-function donutRenderOnDocument(text) {
-    projectShowcaseNode.textContent = text;
+    /*
+    render_frame(0, 0);
+    print_frame();
+    */
 }
 
 function print_frame() {
-    let frame = "";
     for(let i=0; i<screenHeight; i++) {
         for(let j=0; j<screenWidth; j++) {
-            frame += output[i][j];
+            process.stdout.write(output[i][j]);
         }
-        frame += "\n";
+        console.log();
     }
-    return frame;
 }
 
 function sleep(ms) {
@@ -111,4 +98,3 @@ function sleep(ms) {
       setTimeout(resolve, ms);
     });
   }
-
