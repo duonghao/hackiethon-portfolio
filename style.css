@@ -1,3 +1,35 @@
+h2.typing-txt{
+    display: none;
+}
+
+.typing {
+    display: inline-block;
+    animation-name: cursor;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cursor{
+    0%{ border-right: 1px solid #000; }
+    50%{ border-right: 1px solid #fff; }
+    100%{ border-right: 1px solid #000; }
+}
+
+
+.mytitle {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 20px;
+
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: red; */
+
+}
+
 .multiline {
     white-space: pre-wrap;
     word-wrap: break-word;
