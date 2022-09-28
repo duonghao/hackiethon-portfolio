@@ -4,9 +4,10 @@ body {
     font-family: 'Courier Prime';
 }
 
-.card > img {
+.card > div > img {
     object-fit: cover;
     height: 18rem;
+    border-radius: 5%;
 }
 
 /* Typing title */
